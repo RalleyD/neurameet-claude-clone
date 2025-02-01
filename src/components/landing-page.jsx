@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Brain, CheckCircle, FileText, Clock, Search, ShoppingCart } from 'lucide-react';
-import { Alert } from '@/components/ui/alert';
+// import { Alert } from '@/components/ui/alert';
 
 export default function LandingPage() {
   const [email, setEmail] = useState('');
@@ -110,10 +110,10 @@ export default function LandingPage() {
             <div className="text-center">
               <h2 className="text-3xl font-bold text-white mb-8">Transform Your Meetings</h2>
               {submitted ? (
-                <Alert className="bg-gray-800 border-gray-700">
+                {/* <Alert className="bg-gray-800 border-gray-700">
                   <CheckCircle className="h-4 w-4 text-yellow-400" />
                   <span className="ml-2 text-white">Thanks for joining! We'll be in touch soon.</span>
-                </Alert>
+                </Alert> */}
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <input
